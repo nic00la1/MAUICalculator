@@ -4,7 +4,7 @@
              x:Class="MAUICalculator.MVVM.CalcView"
              Title="CalcView">
 
-    <Grid RowDefinitions=".4, .6*">
+    <Grid RowDefinitions=".4*, .6*">
         <VerticalStackLayout>
             <Label Text="5 * 5"
                    StyleClass="LabelText, LabelOperations"/>
@@ -19,12 +19,16 @@
                   RowSpacing="15"
                   Padding="15">
                 <!--#region Row 1 -->
-                <Button Text="AC"/>
+                <Button Text="AC"
+                        Style="{StaticResource YellowButton}"/>
                 <Button Text="⌫"
+                        Style="{StaticResource YellowButton}"
                         Grid.Column="1"/>
                 <Button Text="%"
+                        Style="{StaticResource YellowButton}"
                         Grid.Column="2"/>
                 <Button Text="/"
+                        Style="{StaticResource RedButton}"
                         Grid.Column="3"/>
                 <!--#endregion-->
                 <!--#region Row 2 -->
@@ -37,6 +41,7 @@
                         Grid.Column="2"
                         Grid.Row="1"/>
                 <Button Text="*"
+                        Style="{StaticResource RedButton}"
                         Grid.Column="3"
                         Grid.Row="1"/>
                 <!--#endregion-->
@@ -50,6 +55,7 @@
                         Grid.Column="2"
                         Grid.Row="2"/>
                 <Button Text="-"
+                        Style="{StaticResource RedButton}"
                         Grid.Column="3"
                         Grid.Row="2"/>
                 <!--#endregion-->
@@ -63,6 +69,7 @@
                         Grid.Column="2"
                         Grid.Row="3"/>
                 <Button Text="+"
+                        Style="{StaticResource RedButton}"
                         Grid.Column="3"
                         Grid.Row="3"/>
                 <!--#endregion-->
@@ -74,6 +81,7 @@
                         Grid.Column="2"
                         Grid.Row="4"/>
                 <Button Text="="
+                        Style="{StaticResource RedButton}"
                         Grid.Column="3"
                         Grid.Row="4"/>
                 <!--#endregion-->
