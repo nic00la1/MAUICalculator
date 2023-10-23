@@ -5,7 +5,12 @@
              Title="CalcView">
 
     <Grid RowDefinitions=".4, .6*">
-        
+        <VerticalStackLayout>
+            <Label Text="5 * 5"
+                   StyleClass="LabelText, LabelOperations"/>
+            <Label Text="25"
+                   StyleClass="LabelText, LabelResult"/>
+        </VerticalStackLayout>
     </Grid>
     
 </ContentPage>
